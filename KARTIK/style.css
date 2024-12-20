@@ -1,0 +1,205 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f3ea;
+    color: #333;
+    background-image: url('./extrawide_3x1.jpg');
+    background-size: cover; 
+}
+
+header {
+    background-color: #00474f;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #FCC02A;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+h1, p {
+    color: #fff;
+}
+
+.categories h2, .latest-posts h2 {
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.category-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 30%;
+    text-decoration: none;
+    color: #333;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, filter 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+    border-color: #ff000d; 
+    filter: brightness(1.2); 
+    text-shadow: 0 0 10px rgba(255, 204, 0, 0.8); 
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1); 
+    filter: brightness(1.2);
+}
+
+.latest-posts {
+    margin-top: 3rem;
+}
+
+.latest-posts article {
+    padding: 1.5rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.latest-posts article:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.latest-posts img {
+    max-width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.latest-posts article:hover img {
+    transform: scale(1.1);
+}
+
+.latest-posts h3 {
+    color: #00474f;
+    margin-bottom: 0.5rem;
+}
+
+.latest-posts a {
+    display: inline-block;
+    color: #00474f;
+    background-color: #ff0000;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.latest-posts a:hover {
+    background-color: #C0EBA6;
+    color: #00474f;
+}
+
+footer {
+    background-color: #00474f;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+footer .icon {
+    color: #FCC02A;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer .icon:hover {
+    color: #fff;
+}
+
+@media (max-width: 1024px) {
+    .category-cards .card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .category-cards .card {
+        width: 100%;
+        margin: 10px 0; 
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+}
